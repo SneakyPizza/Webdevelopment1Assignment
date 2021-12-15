@@ -1,14 +1,13 @@
 <?php
-include_once("model/User.php");
-
+include_once("../mvc/model/user.php");
 
 class Model {
     public function getAllUsers(){
         return array(
             #Return users from database query here
             #Dummy data
-            "Test User"=> new User("TestUser", "test");
-            "Bob"=> new User("Bob", "Test");
+            "TestUser"=> new User("TestUser", "test"),
+            "Bob"=> new User("Bob", "Test")
         );
     }
 
